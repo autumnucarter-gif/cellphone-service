@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class CellPhoneApplication {
     public static void main(String[] args) {
-        Scanner myscanner = new Scanner(System.in)
+        Scanner myscanner = new Scanner(System.in);
 
 
         //first question and scanner
@@ -28,7 +28,16 @@ public class CellPhoneApplication {
         String owner = myscanner.nextLine();
 
 
+        //Declaration & instantiate
+        CellPhone information = new CellPhone(serialNumber, model, carrier, phoneNumber, owner);
 
+        //Getters
+
+        System.out.println(information.getSerialNumber());
+        System.out.println(information.getModel());
+        System.out.println(information.getCarrier());
+        System.out.println(information.getPhoneNumber());
+        System.out.println(information.getOwner());
 
     }
 }
